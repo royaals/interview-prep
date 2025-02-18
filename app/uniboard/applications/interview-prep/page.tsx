@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Plus } from "lucide-react"
-
+import { NewInterviewModal } from "@/components/InterviewModal"
 import { ChatInput } from "@/components/ChatInput"
 
 export default function InterviewPrepPage() {
@@ -47,7 +47,7 @@ export default function InterviewPrepPage() {
         </div>
       </div>
       <ChatInput />
-   
+      <NewInterviewModal open={showModal} onOpenChange={setShowModal} />
     </div>
   )
 }
