@@ -30,13 +30,13 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
-              src=""
+              src="/logo.png"
               alt="Unimad Logo"
               width={32}
               height={32}
               className="w-8 h-8"
             />
-            <span className="text-xl font-semibold">Unimad</span>
+            <span className="text-xl font-semibold">unimad</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">

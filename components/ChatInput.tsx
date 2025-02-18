@@ -12,7 +12,7 @@ export function ChatInput() {
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-full bg-[#346DE0] flex items-center justify-center flex-shrink-0">
             <Image
-              src="/next.svg"
+              src="/AIlogo.png"
               alt="AI Assistant"
               width={20}
               height={20}

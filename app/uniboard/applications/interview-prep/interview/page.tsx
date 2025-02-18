@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { ChatInput } from "@/components/ChatInput"
+
 
 export default function InterviewPage() {
   const [answer, setAnswer] = useState("")
@@ -67,7 +67,7 @@ export default function InterviewPage() {
           </div>
         </div>
       </div>
-      <ChatInput />
+     
     </div>
   )
 }
