@@ -23,7 +23,7 @@ export function Sidebar() {
         <div className="relative h-full flex flex-col items-center justify-center pb-6">
           <div className="flex flex-col items-center gap-2">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Frontend_Dev_Test-kHcg9Jrgjh5aag7stakPou7Dmabeb0.png"
+              src="/next.svg"
               alt="Unimad Logo"
               width={40}
               height={40}

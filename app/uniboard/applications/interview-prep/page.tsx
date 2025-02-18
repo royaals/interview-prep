@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Plus } from "lucide-react"
 
+import { ChatInput } from "@/components/ChatInput"
 
 export default function InterviewPrepPage() {
   const [showModal, setShowModal] = useState(false)
@@ -45,7 +46,8 @@ export default function InterviewPrepPage() {
           </div>
         </div>
       </div>
-    
+      <ChatInput />
+   
     </div>
   )
 }
