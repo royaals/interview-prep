@@ -6,7 +6,6 @@ import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 
-
 export default function InterviewPage() {
   const [answer, setAnswer] = useState("")
   const router = useRouter()
@@ -17,58 +16,94 @@ export default function InterviewPage() {
 
   return (
     <div className="flex-1 min-h-screen bg-[#F5F5F5]">
-      {/* Left-aligned header section */}
+      {/* Header section */}
       <div className="px-8 pt-8">
         <Link
           href="/uniboard/applications/interview-prep"
-          className="inline-flex items-center text-[#346DE0] mb-6 hover:underline"
+          className="inline-flex items-center gap-2 px-3 py-1 bg-[#EEF2FF] text-[#346DE0] text-sm rounded-md hover:bg-[#EEF2FF]/80"
         >
-          <ArrowLeft className="h-4 w-4 mr-2" />
+          <ArrowLeft className="h-4 w-4" />
           Back
         </Link>
-        <h1 className="text-2xl font-semibold text-[#373737] mb-16">Interview Prep</h1>
+        <h1 className="text-[17px] font-semibold text-[#346DE0] mt-8">Interview Prep</h1>
       </div>
 
-      {/* Centered content section */}
-      <div className="max-w-[800px] mx-auto px-8">
+      {/* Main content */}
+      <div className="max-w-[800px] mx-auto px-8 mt-16">
         <div className="space-y-6">
-          <div className="flex items-center gap-2">
-            <span className="px-3 py-1 bg-[#EEF2FF] text-[#346DE0] text-sm rounded-full">Round</span>
+          <div className="flex justify-center">
+            <span className="px-3 py-1 bg-[#346DE033] text-[#346DE0] text-sm rounded-md">
+              Round
+            </span>
           </div>
 
-          <h2 className="text-2xl text-[#373737] text-center mb-8">Can you please tell me a bit about yourself?</h2>
+          <h2 
+            className="text-center mt-8 mb-20"  // Increased top and bottom margins
+            style={{
+              fontFamily: 'Inter',
+              fontSize: '24px',
+              fontWeight: 400,
+              lineHeight: '29.05px',
+              letterSpacing: '0%',
+              color: '#808080'
+            }}
+          >
+            Can you please tell me a bit about yourself?
+          </h2>
 
-          <div className="space-y-2">
-            <label className="text-sm text-[#346DE0] font-medium">Your Answer</label>
-            <textarea
-              value={answer}
-              onChange={(e) => setAnswer(e.target.value)}
-              className="w-full min-h-[240px] p-4 rounded-lg border border-[#E5E7EB] resize-none focus:ring-2 focus:ring-[#346DE0] focus:border-transparent bg-white"
-              placeholder="Type your answer here..."
-            />
+          <div className="mt-20">
+            <div className="bg-white rounded-lg border border-[#0000004D]">
+              {/* Your Answer header */}
+              <div 
+                className="w-full py-2 px-4 text-[#346DE0] text-sm font-medium"
+                style={{
+                  background: '#EEF2FF',
+                  borderTopLeftRadius: '8px',
+                  borderTopRightRadius: '8px'
+                }}
+              >
+                Your Answer
+              </div>
+              
+              {/* Textarea */}
+              <textarea
+                value={answer}
+                onChange={(e) => setAnswer(e.target.value)}
+                className="w-full min-h-[160px] p-4 text-[#373737] resize-none focus:outline-none"
+                placeholder="Type your answer here..."
+                style={{
+                  border: 'none',
+                  background: 'transparent'
+                }}
+              />
+            </div>
           </div>
 
-          <div className="flex justify-end gap-4">
-            <Button variant="outline" className="px-8 text-[#346DE0] border-[#346DE0] hover:bg-[#EEF2FF]">
+          <div className="flex justify-end gap-3 mt-6">
+            <Button 
+              variant="outline" 
+              className="h-9 px-6 text-sm text-[#346DE0] border-[#346DE0] hover:bg-[#EEF2FF] font-medium"
+            >
               Skip
             </Button>
-            <Button className="bg-[#346DE0] hover:bg-[#346DE0]/90 px-8" onClick={handleNext}>
+            <Button 
+              onClick={handleNext}
+              className="h-9 px-6 text-sm bg-[#346DE0] hover:bg-[#346DE0]/90 font-medium"
+            >
               Next
             </Button>
           </div>
         </div>
 
         {/* Progress Bar */}
-        <div className="fixed bottom-20 left-[280px] right-0">
+        <div className="fixed bottom-24 left-[320px] right-0">
           <div className="max-w-[800px] mx-auto px-8">
-            <div className="w-full h-1 bg-[#E5E7EB] rounded">
-              <div className="w-1/5 h-full bg-[#346DE0] rounded" />
+            <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
+              <div className="w-1/5 h-full bg-[#346DE0]" />
             </div>
           </div>
         </div>
       </div>
-     
     </div>
   )
 }
-
