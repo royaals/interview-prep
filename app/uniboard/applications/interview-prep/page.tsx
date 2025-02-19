@@ -7,7 +7,8 @@ import { Plus } from "lucide-react"
 import { NewInterviewModal } from "@/components/InterviewModal"
 import { ChatInput } from "@/components/ChatInput"
 
-export default function InterviewPrepPage() {
+// Add error boundaries
+const InterviewPrepPage = () => {
   const [showModal, setShowModal] = useState(false)
 
   const interviews = [
@@ -18,10 +19,11 @@ export default function InterviewPrepPage() {
   return (
     <div className="min-h-screen pb-24">
       <div className="p-8">
-        <h1 className="text-[#346DE0] text-[17px] font-semibold mb-10">Interview Prep</h1>
+        <h1 className="text-[#346DE0] text-[17px] font-semibold mb-10">
+          Interview Prep
+        </h1>
 
         <div className="grid gap-6">
-          {/* New Interview Card */}
           <Card
             className="bg-[#EEF2FF] border-dashed border-2 border-[#346DE0]/20 p-6 cursor-pointer hover:bg-[#EEF2FF]/80 transition-colors"
             onClick={() => setShowModal(true)}
@@ -32,15 +34,21 @@ export default function InterviewPrepPage() {
             </button>
           </Card>
 
-          {/* Interview Cards */}
           <div className="grid gap-4 md:grid-cols-2">
             {interviews.map((interview) => (
-              <Card key={interview.title} className="p-6 flex items-center justify-between bg-white">
+              <Card 
+                key={interview.title} 
+                className="p-6 flex items-center justify-between bg-white"
+              >
                 <div>
-                  <h3 className="font-semibold text-[#373737]">{interview.title}</h3>
+                  <h3 className="font-semibold text-[#373737]">
+                    {interview.title}
+                  </h3>
                   <p className="text-sm text-[#808080]">{interview.company}</p>
                 </div>
-                <Button className="bg-[#346DE0] hover:bg-[#346DE0]/90">Retake</Button>
+                <Button className="bg-[#346DE0] hover:bg-[#346DE0]/90">
+                  Retake
+                </Button>
               </Card>
             ))}
           </div>
@@ -52,3 +60,4 @@ export default function InterviewPrepPage() {
   )
 }
 
+export default InterviewPrepPage
