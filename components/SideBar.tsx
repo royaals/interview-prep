@@ -53,7 +53,7 @@ export function Sidebar() {
           {menuItems.map((item) => (
             <li key={item.name}>
               <Link
-                href="#"
+                href="/"
                 className={`flex items-center justify-between px-4 py-2 rounded-lg text-m ${
                   item.name === "Applications" ? "text-[#346DE0] bg-[#EEF2FF]" : "text-[#808080] hover:bg-gray-50"
                 }`}

@@ -10,13 +10,13 @@ export function ChatInput() {
     <div className="fixed bottom-0 left-[320px] right-0 border-t border-[#E5E7EB] bg-white">
       <div className="px-8 py-4">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-[#346DE0] flex items-center justify-center flex-shrink-0">
+          <div className="w-10 h-10 rounded-full bg-[#346DE0] flex items-center justify-center flex-shrink-0">
             <Image
               src="/AIlogo.png"
               alt="AI Assistant"
-              width={20}
-              height={20}
-              className="w-5 h-5"
+              width={31}
+              height={25}
+              
             />
           </div>
           <Input

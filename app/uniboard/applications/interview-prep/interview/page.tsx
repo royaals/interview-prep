@@ -70,7 +70,8 @@ export default function InterviewPage() {
                 value={answer}
                 onChange={(e) => setAnswer(e.target.value)}
                 className="w-full min-h-[160px] p-4 text-[#373737] resize-none focus:outline-none"
-                placeholder="Type your answer here..."
+                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam quisque id. Aenean euismod elementum nisi quis eleifend quam. 
+"
                 style={{
                   border: 'none',
                   background: 'transparent'

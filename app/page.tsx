@@ -30,13 +30,13 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
-              src="/logo.png"
+              src="/logo_blue.png"
               alt="Unimad Logo"
-              width={32}
-              height={32}
-              className="w-8 h-8"
+              width={22}
+              height={22}
+             
             />
-            <span className="text-xl font-semibold">unimad</span>
+            <span className="text-[#346DE0] text-xl font-semibold">unimad</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#" className="text-sm text-gray-600 hover:text-gray-900">
@@ -83,7 +83,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* How It Works */}
+      
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
