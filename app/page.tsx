@@ -25,7 +25,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
+      
       <header className="border-b">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -55,7 +55,7 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* Hero Section */}
+      
       <section className="py-20 bg-gradient-to-b from-blue-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -70,7 +70,7 @@ export default function LandingPage() {
             </Link>
           </div>
 
-          {/* Feature Cards */}
+          
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature) => (
               <Card key={feature.title} className="p-6">
@@ -109,7 +109,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Benefits */}
+      
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose Unimad</h2>
@@ -131,7 +131,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      
       <section className="py-20 bg-[#346DE0] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Ace Your Interviews?</h2>

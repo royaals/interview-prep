@@ -33,7 +33,7 @@ export function Sidebar() {
   </div>
 </div>
 
-      {/* Profile section */}
+   
       <div className="p-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Avatar className="w-6 h-6">
@@ -47,7 +47,7 @@ export function Sidebar() {
         </Button>
       </div>
 
-      {/* Navigation */}
+    
       <nav className="px-2 py-4">
         <ul className="space-y-1">
           {menuItems.map((item) => (

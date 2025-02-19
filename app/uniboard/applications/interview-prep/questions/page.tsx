@@ -30,10 +30,10 @@ export default function QuestionsPage() {
   return (
     <div className="flex-1 min-h-screen">
       <div className="flex">
-        {/* Questions Section */}
+     
         <div className="flex-[2] border-r border-[#E5E7EB]">
           <div className="p-8">
-            {/* Header */}
+            
             <div className="mb-8">
               <Link
                 href="/uniboard/applications/interview-prep"
@@ -51,7 +51,7 @@ export default function QuestionsPage() {
               </div>
             </div>
 
-            {/* Question Type Filters */}
+            
             <div className="flex gap-2 mb-6">
               {questionTypes.map((type) => (
                 <Button
@@ -67,7 +67,7 @@ export default function QuestionsPage() {
               ))}
             </div>
 
-            {/* Questions */}
+            
             <div className="space-y-6">
               {questions.map((question) => (
                 <div key={question.id} className="border rounded-lg p-6 bg-white space-y-4">
@@ -90,7 +90,7 @@ export default function QuestionsPage() {
           </div>
         </div>
 
-        {/* Recommendation Panel */}
+       
         <div className="flex-1 p-8">
           <div className="sticky top-8">
             <div className="border rounded-lg p-6 bg-white">

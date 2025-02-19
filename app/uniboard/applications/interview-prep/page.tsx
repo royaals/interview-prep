@@ -7,7 +7,7 @@ import { Plus } from "lucide-react"
 import { NewInterviewModal } from "@/components/InterviewModal"
 import { ChatInput } from "@/components/ChatInput"
 
-// Add error boundaries
+
 const InterviewPrepPage = () => {
   const [showModal, setShowModal] = useState(false)
 

@@ -16,7 +16,7 @@ export default function InterviewPage() {
 
   return (
     <div className="flex-1 min-h-screen bg-[#F5F5F5]">
-      {/* Header section */}
+     
       <div className="px-8 pt-8">
         <Link
           href="/uniboard/applications/interview-prep"
@@ -28,7 +28,7 @@ export default function InterviewPage() {
         <h1 className="text-[17px] font-semibold text-[#346DE0] mt-8">Interview Prep</h1>
       </div>
 
-      {/* Main content */}
+      
       <div className="max-w-[800px] mx-auto px-8 mt-16">
         <div className="space-y-6">
           <div className="flex justify-center">
@@ -38,7 +38,7 @@ export default function InterviewPage() {
           </div>
 
           <h2 
-            className="text-center mt-8 mb-20"  // Increased top and bottom margins
+            className="text-center mt-8 mb-20"  
             style={{
               fontFamily: 'Inter',
               fontSize: '24px',
@@ -53,7 +53,7 @@ export default function InterviewPage() {
 
           <div className="mt-20">
             <div className="bg-white rounded-lg border border-[#0000004D]">
-              {/* Your Answer header */}
+              
               <div 
                 className="w-full py-2 px-4 text-[#346DE0] text-sm font-medium"
                 style={{
@@ -65,7 +65,7 @@ export default function InterviewPage() {
                 Your Answer
               </div>
               
-              {/* Textarea */}
+              
               <textarea
                 value={answer}
                 onChange={(e) => setAnswer(e.target.value)}
@@ -96,7 +96,7 @@ export default function InterviewPage() {
           </div>
         </div>
 
-        {/* Progress Bar */}
+        
         <div className="fixed bottom-24 left-[320px] right-0">
           <div className="max-w-[800px] mx-auto px-8">
             <div className="w-full h-1 bg-[#E5E7EB] rounded-full overflow-hidden">
